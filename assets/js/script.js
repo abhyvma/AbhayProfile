@@ -32,7 +32,7 @@ function expCalculator() {
 
 $(document).ready(function() {
   
-    console.log(screen.width);
+    
    
     if ((screen.width<=450))  {
     // for Hide
@@ -43,6 +43,27 @@ $(document).ready(function() {
         document.getElementById("hide").style.display = "block";
         }
     });
+
+    function Submit() {  
+        var name=document.getElementById("fname").value;
+        var email=document.getElementById("email").value;
+        var mno=document.getElementById("mno").value;
+        var mes=document.getElementById("mes").value;
+        if (name!="" && email!=""&& mno!="",mes!="") {
+            alert("Message Sent Successfully !!")
+            document.getElementById("fname").value="";
+            document.getElementById("email").value="";
+            document.getElementById("mno").value="";
+             document.getElementById("mes").value="";
+        }
+        else {
+            alert("All feild Required !!")
+        }
+     
+      
+                 
+    }
+
 
 
 
