@@ -30,6 +30,18 @@ function expCalculator() {
              
 }
 
+$(document).ready(function() {
+
+   
+    if ((screen.width<=460))  {
+    // if screen size width is less than 1024px
+    document.getElementById("hide").style.display = "none";
+    }
+    if ((screen.width>460))  {
+        // if screen size width is less than 1024px
+        document.getElementById("hide").style.display = "block";
+        }
+    });
 
 
 
