@@ -31,14 +31,15 @@ function expCalculator() {
 }
 
 $(document).ready(function() {
-
+  
+    console.log(screen.width);
    
-    if ((screen.width<=500))  {
-    // if screen size width is less than 1024px
+    if ((screen.width<=450))  {
+    // for Hide
     document.getElementById("hide").style.display = "none";
     }
-    if ((screen.width>500))  {
-        // if screen size width is less than 1024px
+    else if ((screen.width>450))  {
+        // for unhide
         document.getElementById("hide").style.display = "block";
         }
     });
